@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Título Centrado y Logos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 0 20px;
+        }
+
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mi Página Web</h1>
+    </div>
+
+    <div class="container">
+        <div class="logo" id="logo-left">
+            <!-- Aquí puedes poner tu imagen de logo izquierdo -->
+            <img src="ruta/a/tu/logo-izquierdo.png" alt="Logo Izquierdo">
+        </div>
+
+        <div class="content">
+            <p>Bienvenido a mi página web.</p>
+        </div>
+
+        <div class="logo" id="logo-right">
+            <!-- Aquí puedes poner tu imagen de logo derecho -->
+            <img src="ruta/a/tu/logo-derecho.png" alt="Logo Derecho">
+        </div>
+    </div>
+</body>
+</html>
