@@ -33,6 +33,13 @@
             text-align: left;
             font-size: 2em;
             margin-top: 40px;
+            color: #007BFF;
+        }
+        h1 {
+            text-align: left;
+            font-size: 3em;
+            margin-top: 40px;
+            color: #007BFF;
         }
         a {
             text-decoration: none;
@@ -94,16 +101,16 @@
 </head>
 <body>
     <div class="header">
-        <img src="img/logou.jpg" alt="Logo de la Universidad" class="logos">
+        <img src="img/logou.jpg" alt="Logo de la Universidad" class="logos" width="300" height="200">
         <h1>Proyecto de Automatización de Generador Eléctrico con ATS</h1>
-        <img src="img/logoc.jpg" alt="Logo de la Carrera" class="logos">
+        <img src="img/logoc.jpg" alt="Logo de la Carrera" class="logos" width="300" height="200">
     </div>
 
     <div class="section">
         <h2><a href="#introduccion">Introducción</a></h2>
         <div id="introduccion" class="content">
             <div class="text">
-                <p>ATS (Sistema de Transmisión Automático) Es un dispositivo  que conecta los equipos a una fuente de energía de respaldo cuando la principal falla. Su función es garantizar que las máquinas sigan funcionando durante cortes de energía.</p>
+                <p>ATS (Sistema de Transmisión Automático) Es un dispositivo que conecta los equipos a una fuente de energía de respaldo cuando la principal falla. Su función es garantizar que las máquinas sigan funcionando durante cortes de energía. Por tanto, opera de manera automática, el ATS detecta la interrupción en el suministro eléctrico y activa la fuente secundaria (generador) en cuestión de segundos, evitando interrupciones en los diferentes procesos. Se utiliza comúnmente en laboratorios, hospitales, industrias y cualquier entorno donde sea fundamental la continuidad eléctrica.</p>
             </div>
             <div class="image">
                 <img src="ruta/a/tu/imagen1.jpg" alt="Imagen de introducción">
@@ -206,22 +213,22 @@
         <h2><a href="#esquema-conexion">Esquema de Conexión</a></h2>
         <div id="esquema-conexion" class="content">
             <div class="text">
-                <p>Incluye una descripción del esquema de conexión utilizado en la instalación del sistema ATS.</p>
+                <p>Esquema de conexión de la Caja principal de breakers al ATS.</p>
             </div>
             <div class="image">
-                <img src="ruta/a/tu/esquema-conexion.jpg" alt="Esquema de conexión">
+                <img src="img/plano.jpg" alt="Esquema de conexión">
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2><a href="#diagrama-unifilar">Diagrama Unifilar</a></h2>
+        <h2><a href="#diagrama-unifilar">Diagrama de Conexión ATS</a></h2>
         <div id="diagrama-unifilar" class="content">
             <div class="text">
-                <p>Muestra y describe el diagrama unifilar del circuito utilizado en el proyecto.</p>
+                <p>Muestra y describe el diagrama del ATS del circuito utilizado en el proyecto.</p>
             </div>
             <div class="image">
-                <img src="ruta/a/tu/diagrama-unifilar.jpg" alt="Diagrama unifilar">
+                <img src="img/diagrama.jpg" alt="Diagrama unifilar">
             </div>
         </div>
     </div>
@@ -237,13 +244,18 @@
     </div>
 
     <div class="section">
-        <h2><a href="#resultados">Resultados</a></h2>
+        <h2><a href="#resultados">Funcionamiento</a></h2>
         <div id="resultados" class="content">
             <div class="text">
-                <p>Presenta los resultados obtenidos. ¿Qué se logró con la implementación del sistema ATS?</p>
+             <!-- funcionamiento -->
+                 <ul>
+                    <li>1. La energía de la empresa eléctrica ingresa por el extremo derecho de la caja hacia el breaker térmico de color rojo. Luego pasa a los contactores normalmente abierto y normalmente cerrado, los cuales están conectados en paralelo.</li>
+                    <li>2. Se energiza las dos bobinas de los contactores y mediante el cable de retorno se alimenta la línea principal del circuito. </li>
+                    <li>3. Cuando se produce un corte de energía desde la empresa eléctrica, el contactor normalmente cerrado energiza la bobina interna del temporizador enviando una señal cada 10 segundos al arranque del generador para que este se encienda..</li>
+                    <li>4. Una vez encendido el generador la energía de este ingresa por el extremo izquierdo hacia el breaker térmico azul, el cual energiza a los contactores y luego a la línea de retorno para alimentar la línea principal del circuito..</li>
             </div>
             <div class="image">
-                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de resultados">
+                <img src="img/funcionamiento.jpg" alt="Imagen de resultados">
             </div>
         </div>
     </div>
@@ -252,68 +264,86 @@
         <h2><a href="#conclusiones">Conclusiones</a></h2>
         <div id="conclusiones" class="content">
             <div class="text">
-                <p>Finaliza con las conclusiones del proyecto. ¿Qué se aprendió? ¿Cuáles son las perspectivas futuras?</p>
+              <!-- Conclusiones -->
+                <h3>Conclusiones</h3>
+                <ul>
+                    <li>1. Se logró automatizar el encendido del generador eléctrico en la carrera de Pedagogía Técnica de la Mecatrónica.</li>
+                    <li>2. Se investigó sobre los componentes eléctricos de un generador y las técnicas de automatización aplicables. Esta investigación proporcionó una base sólida para el desarrollo del proyecto.</li>
+                    <li>3. Se calcularon correctamente los requerimientos de consumo eléctrico del aula, determinando la potencia nominal necesaria para el generador. Este cálculo fue crucial para dimensionar adecuadamente el sistema de automatización.</li>
+                    <li>4. Se diseñó y construyó un sistema de automatización para el encendido del generador.</li>
+                    <li>5. Se analizó detalladamente el sistema de encendido automático, evaluando su eficiencia y fiabilidad. Los resultados mostraron que el sistema funciona correctamente y cumple con los requisitos establecidos.</li>
+
             </div>
             <div class="image">
-                <img src="ruta/a/tu/imagen4.jpg" alt="Imagen de conclusiones">
+                <img src="img/visto.jpg" alt="Imagen de conclusiones">
             </div>
         </div>
     </div>
 
-    <div class="section participants">
-        <h2>Participantes del Proyecto</h2>
-        <div class="participants-grid">
-            <!-- Participante 1 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Josselyn Cuichan</p>
-                <p><strong>Celular:</strong> 0997639100</p>
-                <p><strong>Correo:</strong> jecuichanm@uce.edu.ec</p>
+    <div class="section">
+        <h2><a href="#participantes">Participantes del Proyecto</a></h2>
+        <div id="participantes" class="participants">
+            <div class="participant">
+                <p><strong>Josselyn Cuichan</strong></p>
+                <p>Teléfono: 0997639100</p>
+                <p>Correo:  jecuichanm@uce.edu.ec</p>
             </div>
-            <!-- Participante 2 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Vallejo Katherine </p>
-                <p><strong>Celular:</strong> 0963884467</p>
-                <p><strong>Correo:</strong> kevallejol@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Aracelly Quilumba</strong></p>
+                <p>Teléfono: 0961385699</p>
+                <p>Correo: laquilumba@uce.edu.ec</p>
             </div>
-            <!-- Participante 3 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Josue Guaranda</p>
-                <p><strong>Celular:</strong> 0962563242</p>
-                <p><strong>Correo:</strong> jjguaranda@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Josue Guaranda</strong></p>
+                <p>Teléfono: 0962563242</p>
+                <p>Correo: jjguaranda@uce.edu.ec</p>
             </div>
-            <!-- Participante 4 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Nicolas Reza</p>
-                <p><strong>Celular:</strong> 093 97 934 5505</p>
-                <p><strong>Correo:</strong> jnreza@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Yaguachi Cumbicos Jonathan Manuel</strong></p>
+                <p>Teléfono: 0983222692</p>
+                <p>Correo: jmyaguachi@uce.edu.ec</p>
             </div>
-            <!-- Participante 5 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Sangucho Pilliza Carol Fernanda</p>
-                <p><strong>Celular:</strong> 0995037926</p>
-                <p><strong>Correo:</strong> cfsangucho@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Nicolas Reza</strong></p>
+                <p>Teléfono: 093 97 934 5505</p>
+                <p>Correo:  jnreza@uce.edu.ec</p>
             </div>
-            <!-- Participante 6 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Kevin Sagñay</p>
-                <p><strong>Celular:</strong> 123-456-7890</p>
-                <p><strong>Correo:</strong> participante6@institucional.com</p>
+            <div class="participant">
+                <p><strong>Sangucho Pilliza Carol Fernanda</strong></p>
+                <p>Teléfono: 0995037926</p>
+                <p>Correo: cfsangucho@uce.edu.ec</p>
             </div>
-            <!-- Participante 7 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Vallejo Loya Katherine Estefania</p>
-                <p><strong>Celular:</strong> 0963884467</p>
-                <p><strong>Correo:</strong> kevallejol@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Nombre 7</strong></p>
+                <p>Teléfono: 123-456-789</p>
+                <p>Correo: nombre7@universidad.edu</p>
             </div>
-            <!-- Participante 8 -->
-            <div class="text">
-                <p><strong>Nombre:</strong> Yaguachi Cumbicos Jonathan Manuel</p>
-                <p><strong>Celular:</strong> 0983222692</p>
-                <p><strong>Correo:</strong> jmyaguachi@uce.edu.ec</p>
+            <div class="participant">
+                <p><strong>Kevin Sagñay</strong></p>
+                <p>Teléfono:0992648546</p>
+                <p>Correo: kasagnay@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Vallejo Loya Katherine Estefania</strong></p>
+                <p>Teléfono: 0963884467</p>
+                <p>Correo: kevallejol@uce.edu.ec</p>
             </div>
         </div>
-        
+    </div>
+
+    <div class="section">
+        <div class="university-info">
+            <p><strong>Universidad:</strong> Universidad Central Del Ecuador</p>
+            <p><strong>Semestre:</strong> X 7mo</p>
+            <p><strong>Cátedra:</strong> Sistema Micro-Controlados</p>
+            <p><strong>Docente a Cargo:</strong> MSc.Victor Hidalgo</p>
+        </div>
+        <div class="logos">
+            <img src="img/logoc.png" alt="Logo de la Carrera">
+            <img src="img/logou.png" alt="Logo de la Universidad">
+        </div>
     </div>
 
 </body>
 </html>
+
