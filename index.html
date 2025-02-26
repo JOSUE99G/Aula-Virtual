@@ -76,6 +76,21 @@
         }
         .participants p {
             margin: 5px 0;
+            font-size: 0.9em; /* Letra más pequeña */
+        }
+        .participants-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            gap: 20px; /* Espacio entre columnas */
+        }
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .logos img {
+            max-width: 150px; /* Tamaño de los logos */
+            height: auto;
         }
     </style>
 </head>
@@ -83,124 +98,71 @@
 
     <h1>Proyecto de Automatización de Generador Eléctrico con ATS</h1>
 
-    <div class="section">
-        <h2><a href="#introduccion">Introducción</a></h2>
-        <div id="introduccion" class="content">
-            <div class="text">
-                <p>Aquí puedes escribir la introducción del proyecto. Explica brevemente en qué consiste la automatización del generador eléctrico y el sistema ATS.</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/imagen1.jpg" alt="Imagen de introducción">
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#objetivos">Objetivos</a></h2>
-        <div id="objetivos" class="content">
-            <div class="text">
-                <p>Describe los objetivos del proyecto. ¿Qué se espera lograr con la automatización del generador eléctrico?</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/imagen2.jpg" alt="Imagen de objetivos">
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#metodologia">Metodología</a></h2>
-        <div id="metodologia" class="content">
-            <div class="text">
-                <p>Explica la metodología utilizada en el proyecto. ¿Cómo se llevó a cabo la automatización? ¿Qué tecnologías se utilizaron?</p>
-            </div>
-            <div class="video">
-                <video controls>
-                    <source src="ruta/a/tu/video1.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#esquema-conexion">Esquema de Conexión</a></h2>
-        <div id="esquema-conexion" class="content">
-            <div class="text">
-                <p>Incluye una descripción del esquema de conexión utilizado en la instalación del sistema ATS.</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/esquema-conexion.jpg" alt="Esquema de conexión">
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#diagrama-unifilar">Diagrama Unifilar</a></h2>
-        <div id="diagrama-unifilar" class="content">
-            <div class="text">
-                <p>Muestra y describe el diagrama unifilar del circuito utilizado en el proyecto.</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/diagrama-unifilar.jpg" alt="Diagrama unifilar">
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#manual">Manual de Uso</a></h2>
-        <div id="manual" class="content">
-            <div class="text">
-                <p>Aquí puedes descargar el manual de uso del proyecto en formato PDF.</p>
-                <a href="ruta/a/tu/manual.pdf" class="download-link" download>Descargar Manual (PDF)</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#resultados">Resultados</a></h2>
-        <div id="resultados" class="content">
-            <div class="text">
-                <p>Presenta los resultados obtenidos. ¿Qué se logró con la implementación del sistema ATS?</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de resultados">
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><a href="#conclusiones">Conclusiones</a></h2>
-        <div id="conclusiones" class="content">
-            <div class="text">
-                <p>Finaliza con las conclusiones del proyecto. ¿Qué se aprendió? ¿Cuáles son las perspectivas futuras?</p>
-            </div>
-            <div class="image">
-                <img src="ruta/a/tu/imagen4.jpg" alt="Imagen de conclusiones">
-            </div>
-        </div>
-    </div>
+    <!-- Otras secciones del proyecto (Introducción, Objetivos, etc.) -->
 
     <div class="section participants">
         <h2>Participantes del Proyecto</h2>
-        <div class="text">
-            <p><strong>Nombre:</strong> [Nombre del participante 1]</p>
-            <p><strong>Celular:</strong> [Número de celular]</p>
-            <p><strong>Correo Institucional:</strong> [correo@institucional.com]</p>
-            <p><strong>Universidad:</strong> [Nombre de la universidad]</p>
-            <p><strong>Semestre:</strong> [Semestre]</p>
-            <p><strong>Cátedra:</strong> [Nombre de la cátedra]</p>
-            <p><strong>Docente a Cargo:</strong> [Nombre del docente]</p>
+        <div class="participants-grid">
+            <!-- Participante 1 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 1</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante1@institucional.com</p>
+            </div>
+            <!-- Participante 2 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 2</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante2@institucional.com</p>
+            </div>
+            <!-- Participante 3 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 3</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante3@institucional.com</p>
+            </div>
+            <!-- Participante 4 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 4</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante4@institucional.com</p>
+            </div>
+            <!-- Participante 5 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 5</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante5@institucional.com</p>
+            </div>
+            <!-- Participante 6 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 6</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante6@institucional.com</p>
+            </div>
+            <!-- Participante 7 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 7</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante7@institucional.com</p>
+            </div>
+            <!-- Participante 8 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 8</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante8@institucional.com</p>
+            </div>
+            <!-- Participante 9 -->
+            <div class="text">
+                <p><strong>Nombre:</strong> Participante 9</p>
+                <p><strong>Celular:</strong> 123-456-7890</p>
+                <p><strong>Correo:</strong> participante9@institucional.com</p>
+            </div>
         </div>
-        <div class="text">
-            <p><strong>Nombre:</strong> [Nombre del participante 2]</p>
-            <p><strong>Celular:</strong> [Número de celular]</p>
-            <p><strong>Correo Institucional:</strong> [correo@institucional.com]</p>
-            <p><strong>Universidad:</strong> [Nombre de la universidad]</p>
-            <p><strong>Semestre:</strong> [Semestre]</p>
-            <p><strong>Cátedra:</strong> [Nombre de la cátedra]</p>
-            <p><strong>Docente a Cargo:</strong> [Nombre del docente]</p>
+        <!-- Logos de la universidad y la carrera -->
+        <div class="logos">
+            <img src="ruta/a/logo-universidad.png" alt="Logo de la Universidad">
+            <img src="ruta/a/logo-carrera.png" alt="Logo de la Carrera">
         </div>
-        <!-- Agrega más participantes si es necesario -->
     </div>
 
 </body>
