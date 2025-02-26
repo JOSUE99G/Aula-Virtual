@@ -1,0 +1,66 @@
+*// <div class="section">
+        <h2><a href="#participantes">Participantes del Proyecto</a></h2>
+        <div id="participantes" class="participants">
+            <div class="participant">
+                <p><strong>Josselyn Cuichan</strong></p>
+                <p>Teléfono: 0997639100</p>
+                <p>Correo:  jecuichanm@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Aracelly Quilumba</strong></p>
+                <p>Teléfono: 093 96 138 5699</p>
+                <p>Correo: nombre2@universidad.edu</p>
+            </div>
+            <div class="participant">
+                <p><strong>Josue Guaranda</strong></p>
+                <p>Teléfono: 0962563242</p>
+                <p>Correo: jjguaranda@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Yaguachi Cumbicos Jonathan Manuel</strong></p>
+                <p>Teléfono: 0983222692</p>
+                <p>Correo: jmyaguachi@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Nicolas Reza</strong></p>
+                <p>Teléfono: 093 97 934 5505</p>
+                <p>Correo:  jnreza@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Sangucho Pilliza Carol Fernanda</strong></p>
+                <p>Teléfono: 0995037926</p>
+                <p>Correo: cfsangucho@uce.edu.ec</p>
+            </div>
+            <div class="participant">
+                <p><strong>Nombre 7</strong></p>
+                <p>Teléfono: 123-456-789</p>
+                <p>Correo: nombre7@universidad.edu</p>
+            </div>
+            <div class="participant">
+                <p><strong>Kevin Sagñay</strong></p>
+                <p>Teléfono: 123-456-7890</p>
+                <p>Correo: nombre8@universidad.edu</p>
+            </div>
+            <div class="participant">
+                <p><strong>Vallejo Loya Katherine Estefania</strong></p>
+                <p>Teléfono: 0963884467</p>
+                <p>Correo: kevallejol@uce.edu.ec</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="university-info">
+            <p><strong>Universidad:</strong> Universidad Central Del Ecuador</p>
+            <p><strong>Semestre:</strong> X 7mo</p>
+            <p><strong>Cátedra:</strong> Sistema Micro-Controlados</p>
+            <p><strong>Docente a Cargo:</strong> MSc.Victor Hidalgo</p>
+        </div>
+        <div class="logos">
+            <img src="ruta/a/tu/logo-carrera.png" alt="Logo de la Carrera">
+            <img src="ruta/a/tu/logo-universidad.png" alt="Logo de la Universidad">
+        </div>
+    </div>
+
+</body>
+</html> //*
