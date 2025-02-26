@@ -3,64 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Título Centrado y Logos</title>
+    <title>Proyecto de Automatización de Generador Eléctrico con ATS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             background-color: #f4f4f4;
         }
-
-        .header {
+        h1 {
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 3em;
+            margin-top: 20px;
         }
-
-        .container {
-            display: flex;
-            width: 100%;
-            max-width: 1200px;
-            justify-content: space-between;
-            align-items: center;
+        h2 {
+            text-align: left;
+            font-size: 2em;
+            margin-top: 40px;
         }
-
-        .logo {
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-            margin: 0 20px;
+        a {
+            text-decoration: none;
+            color: #007BFF;
         }
-
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .content {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image, .video {
+            flex: 1;
             text-align: center;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Aula Virtual Sistemas Micro-Controlados</h1>
-    </div>
 
-    <div class="container">
-        <div class="logo" id="logo-left">
-            <!-- Aquí puedes poner tu imagen de logo izquierdo -->
-            <img src="img/logoc.jpg" alt="Logo Izquierdo">
-        </div>
+    <h1>Proyecto de Automatización de Generador Eléctrico con ATS</h1>
 
-        <div class="content">
-            <p>Los cepillos Team Pedagogia Tecnica de la Mecatronica 7mo Semestre.</p>
-        </div>
-
-        <div class="logo" id="logo-right">
-            <!-- Aquí puedes poner tu imagen de logo derecho -->
-            <img src="img/logou.jpg" alt="Logo Derecho">
+    <div class="section">
+        <h2><a href="#introduccion">Introducción</a></h2>
+        <div id="introduccion" class="content">
+            <div class="text">
+                <p>Aquí puedes escribir la introducción del proyecto. Explica brevemente en qué consiste la automatización del generador eléctrico y el sistema ATS.</p>
+            </div>
+            <div class="image">
+                <img src="ruta/a/tu/imagen1.jpg" alt="Imagen de introducción">
+            </div>
         </div>
     </div>
+
+    <div class="section">
+        <h2><a href="#objetivos">Objetivos</a></h2>
+        <div id="objetivos" class="content">
+            <div class="text">
+                <p>Describe los objetivos del proyecto. ¿Qué se espera lograr con la automatización del generador eléctrico?</p>
+            </div>
+            <div class="image">
+                <img src="ruta/a/tu/imagen2.jpg" alt="Imagen de objetivos">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><a href="#metodologia">Metodología</a></h2>
+        <div id="metodologia" class="content">
+            <div class="text">
+                <p>Explica la metodología utilizada en el proyecto. ¿Cómo se llevó a cabo la automatización? ¿Qué tecnologías se utilizaron?</p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="ruta/a/tu/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><a href="#resultados">Resultados</a></h2>
+        <div id="resultados" class="content">
+            <div class="text">
+                <p>Presenta los resultados obtenidos. ¿Qué se logró con la implementación del sistema ATS?</p>
+            </div>
+            <div class="image">
+                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de resultados">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><a href="#conclusiones">Conclusiones</a></h2>
+        <div id="conclusiones" class="content">
+            <div class="text">
+                <p>Finaliza con las conclusiones del proyecto. ¿Qué se aprendió? ¿Cuáles son las perspectivas futuras?</p>
+            </div>
+            <div class="image">
+                <img src="ruta/a/tu/imagen4.jpg" alt="Imagen de conclusiones">
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
