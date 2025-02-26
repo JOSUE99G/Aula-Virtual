@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Automatización de Generador Eléctrico con ATS</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        h1 {
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .header h1 {
             text-align: center;
+            flex: 1;
             font-size: 3em;
-            margin-top: 20px;
+            margin: 0;
+        }
+        .logos img {
+            width: 150px; /* Ajusta el tamaño según necesidad */
+            height: auto;
         }
         h2 {
             text-align: left;
@@ -80,8 +91,11 @@
     </style>
 </head>
 <body>
-
-    <h1>Proyecto de Automatización de Generador Eléctrico con ATS</h1>
+    <div class="header">
+        <img src="img/logou.jpg" alt="Logo de la Universidad" class="logos">
+        <h1>Proyecto de Automatización de Generador Eléctrico con ATS</h1>
+        <img src="img/logoc.jpg" alt="Logo de la Carrera" class="logos">
+    </div>
 
     <div class="section">
         <h2><a href="#introduccion">Introducción</a></h2>
@@ -246,11 +260,7 @@
                 <p><strong>Correo:</strong> jmyaguachi@uce.edu.ec</p>
             </div>
         </div>
-        <!-- Logos de la universidad y la carrera -->
-        <div class="logos">
-            <img src="img\logou.jpg" alt="Logo de la Universidad">
-            <img src="img\logoc.jpg" alt="Logo de la Carrera">
-        </div>
+        
     </div>
 
 </body>
